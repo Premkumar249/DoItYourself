@@ -7,6 +7,13 @@ public class Swap3 {
         int a = scan.nextInt();
         int b = scan.nextInt();
 
-        System.out.println("After Swapping " +b+ " & " +a);
+
+        a = a ^ b;
+        System.out.println("a= "+a);
+        b = a ^ b;
+        System.out.println("b= "+b);
+        a = a ^ b;
+        System.out.println("a= "+a);
+        System.out.println("After Swapping a = " +a+ " & b = " +b);
     }
 }
